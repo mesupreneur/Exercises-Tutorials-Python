@@ -4,7 +4,7 @@
 while(True):
     num=int(input("Guess a number:"))
     if num>100:
-        print("congrates! you have entered number greater than 100")
+        print("congrats! you have entered number greater than 100")
         break
     else:
         print("Try again!")
