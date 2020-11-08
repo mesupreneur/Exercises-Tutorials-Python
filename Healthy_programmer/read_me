@@ -1,1 +1,29 @@
+Assume that a programmer works at the office from 9-5 pm. We have to take care of his health and remind him three things,
+To drink a total of 3.5-liter water after some time interval between 9-5 pm.35 min
+To do eye exercise after every 30 minutes.
+To perform physical activity after every 45 minutes.
 
+# Instructions:
+The task is to create a program that plays mp3 audio until the programmer enters the input which implies that he has done the task.
+
+For Water, the user should enter “drank”
+For Eye Exercise, the user should enter “eyedone”
+For Physical Exercise, the user should enter “exdone”
+After the user entered the input, a file should be created for every task (one file), which contains the details about the time when the user performed a certain task.
+
+# Challenge:
+You will have to manage the clashes between the reminders. Such that no two reminders play at the same time.
+Use pygame module to play audio.
+If you are following the lectures regularly, then I'm sure you can complete the task in no time.
+
+In order to play music/audio files in pygame, pygame.mixer is used (pygame module for loading and playing sounds).
+This module contains classes for loading Sound objects and controlling playback. 
+There are basically four steps in order to do so:
+Starting the mixer
+mixer.init()
+Loading the song.
+mixer.music.load("song.mp3")
+Setting the volume.
+mixer.music.set_volume(0.7)
+Start playing the song.
+mixer.music.play()
